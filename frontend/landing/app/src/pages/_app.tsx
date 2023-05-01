@@ -1,9 +1,12 @@
 import React             from 'react'
+import { AppProps }      from 'next/app'
 import { ThemeProvider } from '@ui/theme'
 
-const App = ({ Component, props }) => (
+type TProps = unknown;
+
+const App = ({ Component, pageProps }: AppProps<TProps>) => (
   <ThemeProvider>
-    <Component />
+    <Component {...pageProps} />
   </ThemeProvider>
 )
 

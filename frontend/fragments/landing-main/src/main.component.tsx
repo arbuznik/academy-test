@@ -3,7 +3,7 @@ import { FC }       from 'react'
 
 import { Box }      from '@ui/layout'
 import { Row }      from '@ui/layout'
-import { Space }    from '@ui/text'
+import { Space, Text }    from '@ui/text'
 import { NextLink } from '@ui/link'
 
 const Main: FC = () => (

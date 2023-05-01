@@ -1,5 +1,4 @@
 const withPlugins = require('next-compose-plugins')
-const { withImportantThing } = require('./with-important-thing')
 
 const nextConfig = {
   experimental: {
@@ -11,6 +10,4 @@ const nextConfig = {
   },
 }
 
-module.exports = withPlugins([
-  withImportantThing('This is very important function!'),
-], nextConfig)
+module.exports = withPlugins([], nextConfig)
